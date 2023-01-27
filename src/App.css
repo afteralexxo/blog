@@ -139,6 +139,7 @@ body {
 .parag {
   display: flex;
   flex-direction: column;
+  opacity: .75;
   gap: 2rem;
   padding-left: 0.7em;
 }
