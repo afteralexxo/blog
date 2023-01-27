@@ -267,7 +267,7 @@ hr{
   }
 
   .wrapper-container {
-    width: 90%;
+    width: 100%;
     gap: 3.5rem;
   }
 
@@ -278,10 +278,16 @@ hr{
     text-align: center;
   }
 
+  .parag {
+    padding: 0;
+  }
+
   .main-parag {
     opacity: 0.75;
     font-size: 1rem;
     line-height: 2.7rem;
+    width: 100%;
+    padding: 2px;
   }
 
   .home-links {
@@ -319,8 +325,8 @@ hr{
 
   .main-parag {
     opacity: 0.75;
-    font-size: 1rem;
-    line-height: 2.7rem;
+    font-size: .9rem;
+    line-height: 2.6rem;
   }
 
   .home-links {
