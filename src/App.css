@@ -139,7 +139,7 @@ body {
 .parag {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   padding-left: 0.7em;
 }
 
@@ -147,8 +147,9 @@ body {
   text-align: left;
   line-height: 40px;
   opacity: 0.75;
-  background-color: #1e1e1e;
+  background-color: #1e1e1ed7;
   padding: 2rem;
+  box-shadow: 0px 0px 10px 2px #252525;
 }
 
 hr {
