@@ -1,5 +1,4 @@
 import { Outlet, Link, BrowserRouter, Routes, Route } from 'react-router-dom'
-import React, { useEffect } from 'react';
 import Home from './component/Home'
 import NoPage from "./component/NoPage"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,15 +6,6 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import './App.css'
 
 function App() {
-
-  useEffect(() => {
-    const link = document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfBRqDW2lQQnc27vqB_jn9kTdheqojrnZK6sf_FczHIdUPw7LAtb40lA0vhP-vkXhRKMM&usqp=CAU';
-    document.getElementsByTagName('head')[0].appendChild(link);
-    link.style.borderRadius = ' 50%'
-  }, []);
 
   return (
     <div className="App">
