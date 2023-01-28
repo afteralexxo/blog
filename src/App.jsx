@@ -51,8 +51,17 @@ function TopBar () {
 
 
 
+function Download() {
+  const url = './assets/Alemayehu.pdf';
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = 'Alemayehu.pdf';
+  document.body.appendChild(link);
+  link.click();
+}
+
 const DownloadButton = () => (
-  <button className="download-button">
+  <button onClick={Download} className="download-button">
     <span className="download-text">Download</span>
     <span className="download-icon">
       <FontAwesomeIcon icon={faArrowDown} />
