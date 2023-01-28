@@ -4,7 +4,6 @@ import Home from './component/Home'
 import NoPage from "./component/NoPage"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import logo from './assets/logo.png'
 import './App.css'
 
 function App() {
