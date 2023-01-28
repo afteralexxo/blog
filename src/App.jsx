@@ -2,6 +2,8 @@ import { Outlet, Link, BrowserRouter, Routes, Route } from 'react-router-dom'
 import React, { useEffect } from 'react';
 import Home from './component/Home'
 import NoPage from "./component/NoPage"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import logo from './assets/logo.png'
 import './App.css'
 
@@ -23,9 +25,6 @@ function App() {
         <Route path="/" element={<LayOut/>}>
 
           <Route index element={<Home />} />
-          {/* <Route path="home" element={<Home />} />   */}
-          {/* <Route path="home" element={<Home />} /> */}
-          {/* <Route path="home" element={<Home />} /> */}
           <Route path="*" element={<NoPage />} />
 
         </Route>
@@ -53,21 +52,25 @@ function LayOut(){
 function TopBar () {
 
   return (
-      <div className="topbar">
-          <a className="logo">
-              <img src={logo} alt="" width="200px" height="100%" />
-          </a>
+      <div className="topbar">     
           <nav>
-           <ul className="nav-menu">
-            <li className="nav-item"><Link to='/'>Home</Link></li>
-            <li className="nav-item"><Link to='/about'>About</Link></li>
-            <li className="nav-item"><Link to='/projects'>Projects</Link></li>
-            <li className="nav-item"><Link to='/tools'>Tools</Link></li>
-           </ul>
+          <DownloadButton />
           </nav>
       </div>
   )
 }
+
+
+
+const DownloadButton = () => (
+  <button className="download-button">
+    <span className="download-text">Download</span>
+    <span className="download-icon">
+      <FontAwesomeIcon icon={faArrowDown} />
+    </span>
+  </button>
+)
+
 
 
 export default App
