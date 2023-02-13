@@ -1,6 +1,6 @@
 # blog
 
-2 / 2
+
 
 This GitHub repository appears to be a codebase for a simple blog website built using React, Node.js, and MongoDB.
 
