@@ -1,7 +1,7 @@
 # blog
 
 
-
+This is a blog built using React and Node.js, a popular JavaScript framework for building server-rendered applications.
 This GitHub repository appears to be a codebase for a simple blog website built using React, Node.js, and MongoDB.
 
 The React frontend of the application is built using functional components and makes use of various React hooks, such as useState and useEffect. The frontend communicates with a Node.js backend to fetch and persist data. The backend is built using Express and makes use of MongoDB as the database.
