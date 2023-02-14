@@ -1,0 +1,29 @@
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #46592A;
+    text-decoration: none;
+    position: relative;
+    left: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    color: #ffc107; /* change color on hover */
+    transform: scale(1.1); /* add a scaling animation on hover */
+  }
+  
+  .logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffc107;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .logo:hover::after {
+    width: 60%; /* animate the width of the line on hover */
+  }
