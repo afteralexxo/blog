@@ -23,7 +23,7 @@ ul {
 }
  
 .brandname {
-    background: #c9e6ff;
+    background: #808C6D;
 }
  
 .brandname h3, .brandname ul {
@@ -56,17 +56,17 @@ ul {
 .contact form button, .contact form input, .contact form textarea {
     width: 100%;
     padding: 1em;
-    border: 1px solid #c9e6ff;
+    border: 1px solid #808C6D;
 }
  
 .contact form button {
-    background: #c9e6ff;
+    background: #808C6D;
     border: 0;
     text-transform: uppercase;
 }
  
 .contact form button:hover, .contact form button:focus {
-    background: #92bde7;
+    background: #46592A;
     color: #fff;
     outline: 0;
     transition: background-color 0.5s ease-out;
@@ -74,6 +74,10 @@ ul {
  
 /* LARGE SCREENS */
 @media(max-width:700px) {
+    .contact form p {
+        font-weight: bold;
+        grid-column: 1 / 3;
+    }
     section {
         display: grid;
         grid-template-columns: 1fr;

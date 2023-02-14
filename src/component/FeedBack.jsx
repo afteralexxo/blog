@@ -47,18 +47,18 @@ function FeedBack(){
             </div>
             <div className="contact">
                 <h3>Email Me</h3>
-                <form className="">
-                    <p>
+                <form onSubmit={handleSubmit}>
+                    <p >
                         <label htmlor="#">Name</label>
-                        <input type="text" name="name"/>
+                        <input onChange={handleChange} type="text" name="name"/>
                     </p>
-                    <p>
+                    <p >
                         <label htmlor="#">Email Address</label>
-                        <input type="email" name="email"/>
+                        <input onChange={handleChange} type="email" name="email"/>
                     </p>
                     <p className="full">
                         <label htmlor="#">Message</label>
-                        <textarea name="message" cols="30" rows="5"></textarea>
+                        <textarea onChange={handleChange} name="message" cols="30" rows="5"></textarea>
                     </p>
                     <p className="full">
                         <button>Submit</button>
