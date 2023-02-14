@@ -206,7 +206,7 @@ box-shadow:  50px 50px 100px #cecbcbc9,
 }
 
 
-@media (min-width: 340px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .wrapper {
     position: relative;
     top: 100px;
@@ -230,13 +230,18 @@ box-shadow:  50px 50px 100px #cecbcbc9,
 }
 
 .typing-effect {
-  width: 10ch;
+  width: 30ch;
   animation: typing 2s steps(22), effect .5s step-start  ;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+}
+@media  (max-width: 800px) {
+  .typing-effect {
+    width: 9ch;
+  }
 }
 
 @keyframes typing {
