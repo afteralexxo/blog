@@ -55,7 +55,7 @@ function TopBar() {
   return (
 <>
         <nav className="navbar">
-        <a href="#home" className="logo typing-effect">"Twod/>"</a>
+        <a href="#home" className="logo typing-effect">"Twod/"</a>
         <ul className={`navbar-list ${isOpen ? 'show' : 'hide'}`}>
            <li className='hov'>
              <a href="#home">Home</a> 
