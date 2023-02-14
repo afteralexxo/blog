@@ -48,6 +48,7 @@ a {
   flex-direction: column;
   place-items: center;
   width: 100%;
+  gap: 3em;
 }
 .wrapper {
   width: 80%;
