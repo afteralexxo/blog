@@ -25,12 +25,12 @@ function About(){
                  </p>
           <hr/>
           <ul className="certefticate">
-            <li>Coding for Marketers, Solo Learn: https://www.sololearn.com/certificates/CT-NSSHNZQZ </li>
-            <li>Game Development with JS, Solo Learn: https://www.sololearn.com/certificates/CT-KLC4PYL6 </li>
-            <li>Responsive Web Design, Solo Learn: https://www.sololearn.com/certificates/CT-XNARYARP
+            <li><a href="https://www.sololearn.com/certificates/CT-NSSHNZQZ">Coding for Marketers, Solo Learn</a>  </li>
+            <li><a href="https://www.sololearn.com/certificates/CT-KLC4PYL6">Game Development with JS, Solo Learn</a></li>
+            <li><a href="https://www.sololearn.com/certificates/CT-XNARYARP">Responsive Web Design, Solo Learn</a>
  </li>
-            <li>PHP, Solo Learn: https://www.sololearn.com/certificates/CT-W0FYBUMJ </li>
-            <li>Java, Solo Learn: https://www.sololearn.com/certificates/CT-ZL1K0HKV</li>
+            <li><a href="https://www.sololearn.com/certificates/CT-W0FYBUMJ">PHP, Solo Learn</a> </li>
+            <li><a href=" https://www.sololearn.com/certificates/CT-ZL1K0HKV">Java, Solo Learn</a></li>
             </ul>
             <p>Whether you are looking to build a simple portfolio website or a complex e-commerce platform, I am confident in my ability to deliver a website that will not only meet your needs but also enhance your online presence and help you achieve your business goals.</p>
             <button className="btn btn-dark" type="submit">Button</button>

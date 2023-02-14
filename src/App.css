@@ -48,7 +48,7 @@ a {
   flex-direction: column;
   place-items: center;
   width: 100%;
-  gap: 3em;
+  gap: 7em;
 }
 .wrapper {
   width: 80%;
@@ -256,4 +256,5 @@ a {
 .certefticate {
   list-style-position: outside;
   list-style: disc;
+  padding-left: 60px;
 }

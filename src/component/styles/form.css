@@ -23,12 +23,21 @@ ul {
 }
  
 .brandname {
-    background: #808C6D;
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.103);
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
  
 .brandname h3, .brandname ul {
+    font-weight: bold;
+    color: #000000;
     text-align: center;
     margin: 0 0 1rem 0;
+}
+
+.brandname ul li a{
+    color: #305e86;
 }
  
 .contact {
@@ -60,13 +69,13 @@ ul {
 }
  
 .contact form button {
-    background: #808C6D;
+    background: #343440c4;
     border: 0;
     text-transform: uppercase;
 }
  
 .contact form button:hover, .contact form button:focus {
-    background: #46592A;
+    background: #202026;
     color: #fff;
     outline: 0;
     transition: background-color 0.5s ease-out;

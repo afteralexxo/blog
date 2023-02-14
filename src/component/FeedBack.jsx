@@ -42,7 +42,7 @@ function FeedBack(){
                 <ul>
                     <li> +251 940617356</li>
                     <li>thelastalemayehu@gmail.com</li>
-                    <li>alexog.netlify.app</li>
+                    <li><a href="https://alexog.netlify.app">Official Website</a> </li>
                 </ul>
             </div>
             <div className="contact">
