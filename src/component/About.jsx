@@ -7,7 +7,7 @@ function About(){
   const [downloadUrl, setDownloadUrl] = useState('');
 
   const handleDownloadClick = async () => {
-    const response = await axios.get('http://localhost:3000/pdf', {
+    const response = await axios.get('http://feedbackrestapi-production.up.railway.app/pdf', {
       responseType: 'blob',
     });
     const fileBlob = response.data;

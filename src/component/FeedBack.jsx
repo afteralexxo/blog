@@ -22,7 +22,7 @@ function FeedBack(){
         event.preventDefault();
     
         const data = { name, email, feedback };
-        const response = await axios.post('http://localhost:3000/setdata', data)
+        const response = await axios.post('http://feedbackrestapi-production.up.railway.app/setdata', data)
         .then(res => {
           console.log(res);
           console.log(res.data);
