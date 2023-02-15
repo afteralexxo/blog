@@ -1,35 +1,46 @@
 import React from "react";
 import axios from "axios";
 import './styles/form.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './styles/btn.css'
 
 function FeedBack(){
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        feedback: ''
-      });
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [feedback, setFeedback] = useState('');
     
       const handleChange = (event) => {
         setFormData({
           ...formData,
           [event.target.id]: event.target.value
         });
+
       };
-    
-      const handleSubmit = (event) => {
+
+      const handleSubmit = async (event) => {
         event.preventDefault();
-        axios.post('https://feedbackrestapi-production.up.railway.app/setdata', formData)
-          .then(res => {
-            console.log(res);
-            console.log(res.data);
-          })
-          .catch(error => {
-            console.error(error);
-          });
+    
+        const data = { name, email, feedback };
+        const response = await axios.post('http://localhost:3000/setdata', data)
+        .then(res => {
+          console.log(res);
+          console.log(res.data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    
+        // if (response.ok) {
+        //   alert('Feedback submitted successfully!');
+        //   setName('');
+        //   setEmail('');
+        //   setFeedback('');
+        // } else {
+        //   alert('Failed to submit feedback');
+        // }
       };
+      
 
     return(
         <div className="wrapper">
@@ -50,15 +61,23 @@ function FeedBack(){
                 <form onSubmit={handleSubmit}>
                     <p >
                         <label htmlor="#">Name</label>
-                        <input onChange={handleChange} type="text" name="name"/>
+                        <input type="text"
+          id="name"
+          value={name}
+          onChange={(event) => setName(event.target.value)} name="name"/>
                     </p>
                     <p >
                         <label htmlor="#">Email Address</label>
-                        <input onChange={handleChange} type="email" name="email"/>
+                        <input type="email"
+          id="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)} name="email"/>
                     </p>
                     <p className="full">
                         <label htmlor="#">Message</label>
-                        <textarea onChange={handleChange} name="message" cols="30" rows="5"></textarea>
+                        <textarea  id="feedback"
+          value={feedback}
+          onChange={(event) => setFeedback(event.target.value)} name="message" cols="30" rows="5"></textarea>
                     </p>
                     <p className="full">
                         <button>Submit</button>
