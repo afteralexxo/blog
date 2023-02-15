@@ -1,6 +1,20 @@
 import React from "react";
+import { useState } from "react";
+import axios from "axios";
 
 function About(){
+
+  const [downloadUrl, setDownloadUrl] = useState('');
+
+  const handleDownloadClick = async () => {
+    const response = await axios.get('http://localhost:3000/pdf', {
+      responseType: 'blob',
+    });
+    const fileBlob = response.data;
+
+    const url = URL.createObjectURL(fileBlob);
+    setDownloadUrl(url);
+  };
     return(
         <div className="wrapper">
 
@@ -33,7 +47,14 @@ function About(){
             <li><a href=" https://www.sololearn.com/certificates/CT-ZL1K0HKV">Java, Solo Learn</a></li>
             </ul>
             <p>Whether you are looking to build a simple portfolio website or a complex e-commerce platform, I am confident in my ability to deliver a website that will not only meet your needs but also enhance your online presence and help you achieve your business goals.</p>
-            <button className="btn btn-dark" type="submit">Button</button>
+            <div>
+      <button className="btn btn-dark" onClick={handleDownloadClick}>Download CV</button>
+      {downloadUrl && (
+        <a href={downloadUrl} download="resume.pdf">
+          Click to download
+        </a>
+      )}
+    </div>
         </div>
       </div>
         </div>
