@@ -156,6 +156,7 @@ a {
     0px 30px 30px rgba(0, 0, 0, 0.1);
 }
 
+
 .img-container {
   display: flex;
   justify-content: center;
@@ -227,17 +228,20 @@ a {
 }
 
 .typing-effect {
-  width: 30ch;
-  animation: typing 2s steps(22), effect 0.5s step-start;
+  width: 100%;
+  animation: typing 2s steps(22), effect .5s step-start;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
   font-size: 2em;
 }
+
+
 @media (max-width: 1200px) {
+
   .typing-effect {
     width: 9ch;
+    font-size: 1.5em;
   }
 }
 
