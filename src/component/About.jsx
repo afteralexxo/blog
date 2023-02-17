@@ -3,18 +3,6 @@ import { useState } from "react";
 import axios from "axios";
 
 function About(){
-
-  const [downloadUrl, setDownloadUrl] = useState('');
-
-  const handleDownloadClick = async () => {
-    const response = await axios.get('http://feedbackrestapi-production.up.railway.app/pdf', {
-      responseType: 'blob',
-    });
-    const fileBlob = response.data;
-
-    const url = URL.createObjectURL(fileBlob);
-    setDownloadUrl(url);
-  };
     return(
         <div className="wrapper">
 
