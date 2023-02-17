@@ -36,7 +36,7 @@ function About(){
             </ul>
             <p>Whether you are looking to build a simple portfolio website or a complex e-commerce platform, I am confident in my ability to deliver a website that will not only meet your needs but also enhance your online presence and help you achieve your business goals.</p>
             <div>
-<a href="https://drive.google.com/file/d/1z_41Dg6fQTTP9CFjZOGHC_bBsKrIs1Ra/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+<a href="https://drive.google.com/file/d/1z_41Dg6fQTTP9CFjZOGHC_bBsKrIs1Ra/view?usp=sharing" rel="noopener noreferrer">
 <button className="btn btn-dark" >Download CV</button>
     </a>
     </div>
