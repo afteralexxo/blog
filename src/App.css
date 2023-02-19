@@ -264,6 +264,7 @@ a {
 }
 
 .success-message {
+  width: 180%;
   display: block; /* hide the message by default */
   background-color: #d4edda; /* set the background color */
   color: #155724; /* set the text color */
@@ -274,6 +275,7 @@ a {
 }
 
 .error-message {
+  width: 180%;
   display: block; /* hide the message by default */
   background-color: #f8d7da; /* set the background color */
   color: #721c24; /* set the text color */
@@ -281,4 +283,8 @@ a {
   margin-bottom: 10px; /* add some space below the message */
   border: 1px solid #f5c6cb; /* add a border around the message */
   border-radius: 4px; /* round the corners of the message */
+}
+
+.neutral-message{
+  width: 180%;
 }
