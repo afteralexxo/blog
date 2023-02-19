@@ -262,3 +262,23 @@ a {
   list-style: disc;
   padding-left: 60px;
 }
+
+.success-message {
+  display: block; /* hide the message by default */
+  background-color: #d4edda; /* set the background color */
+  color: #155724; /* set the text color */
+  padding: 10px; /* add some padding around the message */
+  margin-bottom: 10px; /* add some space below the message */
+  border: 1px solid #c3e6cb; /* add a border around the message */
+  border-radius: 4px; /* round the corners of the message */
+}
+
+.error-message {
+  display: block; /* hide the message by default */
+  background-color: #f8d7da; /* set the background color */
+  color: #721c24; /* set the text color */
+  padding: 10px; /* add some padding around the message */
+  margin-bottom: 10px; /* add some space below the message */
+  border: 1px solid #f5c6cb; /* add a border around the message */
+  border-radius: 4px; /* round the corners of the message */
+}

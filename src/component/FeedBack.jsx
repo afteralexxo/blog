@@ -6,40 +6,53 @@ import './styles/btn.css'
 
 function FeedBack(){
 
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
-    
-      const handleChange = (event) => {
-        setFormData({
-          ...formData,
-          [event.target.id]: event.target.value
-        });
-
-      };
+  const [isSubmitted, setIsSubmitted] = useState(null);
+  const [message, setMessage] = useState('')
 
       const handleSubmit = async (event) => {
         event.preventDefault();
-    
+
+if(name == '' || email == '' || feedback == ''){
+
+  setIsSubmitted(false);
+
+          if(name == ''){
+            setMessage('fill the name properly')
+          }if(email == ''){
+            setMessage('fill the email properly');
+            
+          }if(feedback == ''){
+            setMessage('fill the feedback properly'); 
+          }
+
+    }else{
+       
         const data = { name, email, feedback };
-        const response = await axios.post('http://feedbackrestapi-production.up.railway.app/setdata', data)
+        await axios.post('http://localhost:3000/setdata', data)
         .then(res => {
-          console.log(res);
-          console.log(res.data);
+          if (res.data) {
+            setIsSubmitted(true);
+            setMessage(`Dear ${data.name} thank you for the feedback`) 
+            setName('')
+            setEmail('')
+            setFeedback('')
+            console.log('success');
+          }
+          else{
+            setMessage(`${data.name} check your form and fill properly`) 
+            setIsSubmitted(false);
+            console.log('error');
+          }
         })
         .catch(error => {
           console.error(error);
         });
-    
-        // if (response.ok) {
-        //   alert('Feedback submitted successfully!');
-        //   setName('');
-        //   setEmail('');
-        //   setFeedback('');
-        // } else {
-        //   alert('Failed to submit feedback');
-        // }
       };
+    }
       
 
     return(
@@ -79,6 +92,9 @@ function FeedBack(){
           value={feedback}
           onChange={(event) => setFeedback(event.target.value)} name="message" cols="30" rows="5"></textarea>
                     </p>
+      {isSubmitted === true && <div className="success-message">{message}</div>}
+      {isSubmitted === false && <div className="error-message">{message}</div>}
+      {isSubmitted === null && <div className="neutral-message">Please submit the form.</div>}
                     <p className="full">
                         <button>Submit</button>
                     </p>
