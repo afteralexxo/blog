@@ -92,9 +92,9 @@ if(name == '' || email == '' || feedback == ''){
           value={feedback}
           onChange={(event) => setFeedback(event.target.value)} name="message" cols="30" rows="5"></textarea>
                     </p>
-      {isSubmitted === true && <div className="success-message">{message}</div>}
-      {isSubmitted === false && <div className="error-message">{message}</div>}
-      {isSubmitted === null && <div className="neutral-message">Please submit the form.</div>}
+      {isSubmitted === true && <div className="success-message full">{message}</div>}
+      {isSubmitted === false && <div className="error-message full">{message}</div>}
+      {isSubmitted === null && <div className="neutral-message full">Please submit the form.</div>}
                     <p className="full">
                         <button>Submit</button>
                     </p>
