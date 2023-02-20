@@ -32,7 +32,7 @@ if(name == '' || email == '' || feedback == ''){
     }else{
        
         const data = { name, email, feedback };
-        await axios.post('http://localhost:3000/setdata', data)
+        await axios.post('https://fair-gray-goat-gown.cyclic.app/setdata', data)
         .then(res => {
           if (res.data) {
             setIsSubmitted(true);
