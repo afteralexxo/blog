@@ -31,7 +31,7 @@ function App() {
       {
         isLoading ? (
           <div className='loading-page'>
-            <ClimbingBoxLoader color="#1e1e1e12" />
+            <ClimbingBoxLoader color="#1e1e1eae" />
           </div>
         ) : (
           <Router>

@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url("https://images.unsplash.com/photo-1542241800-918eb3c793a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=501&q=80");
+  background-image: url("https://th.bing.com/th/id/R.85771f998f4ec3caa1085158273ad381?rik=kXJ9J1F4erlrQg&riu=http%3a%2f%2fimage.architonic.com%2fimg_pro2-1%2f106%2f8332%2fmax_mover_01_br.jpg&ehk=ESRxrkPSQTW0dxgmCNntBH5J7%2f7oGzLA%2bJSG1aOGPtc%3d&risl=&pid=ImgRaw&r=0");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,6 +32,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 body::-webkit-scrollbar-thumb:hover {
   background: #616161;
+}
+.loading-page{
+  height: 100dvh;
+  display: grid;
+  place-items: center;
 }
 
 ul {
