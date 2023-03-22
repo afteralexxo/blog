@@ -18,23 +18,27 @@ body {
   min-height: 100vh;
   overflow: auto;
 }
+
 body::-webkit-scrollbar {
   width: 12px;
   background: #bdbdbd;
   border-radius: 1vw, 1vw, 1vw 1vw;
 }
+
 body::-webkit-scrollbar-thumb {
   background: #9e9e9e;
   border-radius: 1vw, 1vw, 1vw 1vw;
 }
+
 body::-webkit-scrollbar-thumb:hover {
   background: #757575;
 }
+
 body::-webkit-scrollbar-thumb:hover {
   background: #616161;
 }
 
-.loading-page{
+.loading-page {
   height: 100dvh;
   display: grid;
   place-items: center;
@@ -43,12 +47,15 @@ body::-webkit-scrollbar-thumb:hover {
 ul {
   list-style-position: inside;
 }
+
 p {
   color: #000;
 }
+
 a {
   text-decoration: none;
 }
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -56,6 +63,7 @@ a {
   width: 100%;
   gap: 7em;
 }
+
 .wrapper {
   width: 80%;
 }
@@ -68,17 +76,19 @@ a {
   font-size: 1rem;
   border-radius: 0.25rem;
 }
+
 .hov a {
   color: #000;
 }
+
 .navbar {
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 4fr;
   min-height: 80px;
-  backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   justify-content: space-around;
@@ -89,6 +99,7 @@ a {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
+
 .navbar::before {
   content: "";
   background: linear-gradient(to right, #e39600, #ea4c89, #8f48eb, #1da1f2);
@@ -98,10 +109,12 @@ a {
   width: 100%;
   height: 4px;
 }
+
 .navbar-toggler {
   display: none;
   background-color: #000;
 }
+
 .navbar-list,
 .brand {
   color: #000;
@@ -122,6 +135,7 @@ a {
     position: fixed;
     top: 80px;
   }
+
   .navbar-list.show {
     display: flex;
     flex-direction: column;
@@ -132,6 +146,7 @@ a {
     backdrop-filter: blur(24px);
     text-align: center;
   }
+
   .navbar-toggler {
     display: flex;
     justify-self: end;
@@ -157,6 +172,7 @@ a {
   word-wrap: break-word;
   padding: 0 30px;
 }
+
 .hshed {
   text-shadow: 0px 1.5px 0px #b2a98f, 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
     0px 30px 30px rgba(0, 0, 0, 0.1);
@@ -203,7 +219,7 @@ a {
 }
 
 .summary,
-.aboutme > p {
+.aboutme>p {
   word-wrap: break-word;
   word-spacing: 0.2em;
   line-height: 1.5em;
@@ -218,9 +234,11 @@ a {
     width: 100%;
     gap: 5em;
   }
+
   .landing-page {
     grid-template-columns: 1fr;
   }
+
   .about {
     width: 100%;
     min-height: 100dvh;
@@ -228,6 +246,7 @@ a {
     grid-template-columns: 1fr;
     gap: 3em;
   }
+
   .feedback-form {
     width: 100%;
   }
@@ -270,21 +289,35 @@ a {
 }
 
 .success-message {
-  display: block; /* hide the message by default */
-  background-color: #d4edda; /* set the background color */
-  color: #155724; /* set the text color */
-  padding: 10px; /* add some padding around the message */
-  margin-bottom: 10px; /* add some space below the message */
-  border: 1px solid #c3e6cb; /* add a border around the message */
-  border-radius: 4px; /* round the corners of the message */
+  display: block;
+  /* hide the message by default */
+  background-color: #d4edda;
+  /* set the background color */
+  color: #155724;
+  /* set the text color */
+  padding: 10px;
+  /* add some padding around the message */
+  margin-bottom: 10px;
+  /* add some space below the message */
+  border: 1px solid #c3e6cb;
+  /* add a border around the message */
+  border-radius: 4px;
+  /* round the corners of the message */
 }
 
 .error-message {
-  display: block; /* hide the message by default */
-  background-color: #f8d7da; /* set the background color */
-  color: #721c24; /* set the text color */
-  padding: 10px; /* add some padding around the message */
-  margin-bottom: 10px; /* add some space below the message */
-  border: 1px solid #f5c6cb; /* add a border around the message */
-  border-radius: 4px; /* round the corners of the message */
+  display: block;
+  /* hide the message by default */
+  background-color: #f8d7da;
+  /* set the background color */
+  color: #721c24;
+  /* set the text color */
+  padding: 10px;
+  /* add some padding around the message */
+  margin-bottom: 10px;
+  /* add some space below the message */
+  border: 1px solid #f5c6cb;
+  /* add a border around the message */
+  border-radius: 4px;
+  /* round the corners of the message */
 }
