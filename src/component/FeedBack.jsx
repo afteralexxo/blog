@@ -98,7 +98,6 @@ function FeedBack() {
               </p>
               {isSubmitted === true && <div className="success-message full">{message}</div>}
               {isSubmitted === false && <div className="error-message full">{message}</div>}
-              {isSubmitted === null && <div className="neutral-message full">Please submit the form.</div>}
               <p className="full">
                 {loading ? <div class="loader">
                   <span>L</span>
